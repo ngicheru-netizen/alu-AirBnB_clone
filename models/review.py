@@ -6,6 +6,10 @@ from models.base_model import BaseModel
 class Review(BaseModel):
     """Represent a review written for a place."""
 
+    place_id = ""
+    user_id = ""
+    text = ""
+
     def __init__(self, *args, **kwargs):
         """Initialize a review with its author, place, and text."""
         super().__init__(*args, **kwargs)

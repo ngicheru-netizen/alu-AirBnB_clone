@@ -6,6 +6,11 @@ from models.base_model import BaseModel
 class User(BaseModel):
     """Represent a user of the application."""
 
+    email = ""
+    password = ""
+    first_name = ""
+    last_name = ""
+
     def __init__(self, *args, **kwargs):
         """Initialize a user with common account fields."""
         super().__init__(*args, **kwargs)
